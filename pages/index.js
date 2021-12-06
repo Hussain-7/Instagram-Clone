@@ -12,7 +12,6 @@ export default function Home() {
       <Header />
       {/* Feed */}
       {/* Modal */}
-      <h1>This is the Instagram Build</h1>
     </div>
   );
 }

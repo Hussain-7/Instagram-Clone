@@ -3,10 +3,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start TAILWIND_MODE=watch"
   },
   "dependencies": {
-    "next": "latest",
+    "@heroicons/react": "^1.0.5",
+    "@tailwindcss/forms": "^0.3.4",
+    "next": "^12.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
