@@ -1,7 +1,13 @@
-import { DotsHorizontalIcon } from "@heroicons/react/outline";
+import {
+  BookmarkIcon,
+  ChatIcon,
+  DotsHorizontalIcon,
+  EmojiHappyIcon,
+  HeartIcon,
+  PaperAirplaneIcon,
+} from "@heroicons/react/outline";
 import {} from "@heroicons/react/solid";
 function Post({ id, username, userImg, img, caption }) {
-  console.log(userImg);
   return (
     <div className="bg-white my-7 border rounded-sm">
       {/* Header */}
@@ -15,10 +21,33 @@ function Post({ id, username, userImg, img, caption }) {
         <DotsHorizontalIcon className="h-5" />
       </div>
       {/* Image */}
+      <img src={img} alt="" className="object-cover w-full" />
       {/*Buttons */}
+      <div className="flex justify-between px-4 pt-4">
+        <div className="flex space-x-4">
+          <HeartIcon className="btn" />
+          <ChatIcon className="btn" />
+          <PaperAirplaneIcon className="btn" />
+        </div>
+        <BookmarkIcon className="btn" />
+      </div>
+      {/* Caption */}
+      <p className="p-5 truncate">
+        <span className="font-bold mr-1">{username}</span>
+        {caption}
+      </p>
       {/* Comments */}
       {/* Input Box */}
-      <h1></h1>
+      <form className="flex items-center p-4">
+        <EmojiHappyIcon className="h-7" />
+        <input
+          className="border-none focus:ring-0 flex-1"
+          placeholder="add a comment..."
+          type="text"
+          name="comment"
+        />
+        <button className="font-semibold text-blue-400 ">Post</button>
+      </form>
     </div>
   );
 }

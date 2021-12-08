@@ -25,7 +25,8 @@ const posts = [
     userImg:
       "https://media-exp1.licdn.com/dms/image/C4E03AQH5_54XQXJtPw/profile-displayphoto-shrink_800_800/0/1606752728327?e=1644451200&v=beta&t=BW7rZoo911IXAr483ZEWDjs-dsdYS5q6Y692QVvL2jM",
     img: "https://media-exp1.licdn.com/dms/image/C4E03AQH5_54XQXJtPw/profile-displayphoto-shrink_800_800/0/1606752728327?e=1644451200&v=beta&t=BW7rZoo911IXAr483ZEWDjs-dsdYS5q6Y692QVvL2jM",
-    caption: "This is dope",
+    caption:
+      "This is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dopeThis is dope",
   },
 ];
 function Posts() {
@@ -42,7 +43,7 @@ function Posts() {
           id={post.id}
           username={post.username}
           userImg={post.userImg}
-          img={posts.img}
+          img={post.img}
           caption={post.caption}
         />
       ))}
