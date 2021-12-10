@@ -12,7 +12,7 @@ component layer  */
   }
   .btn {
     @apply h-7 hover:scale-125 cursor-pointer
-  transition-all duration-150 ease-out;
+  transition-all duration-150 ease-out hover:text-gray-500;
   }
   .storyBorder{
     @apply bg-image-conic-gradient()
