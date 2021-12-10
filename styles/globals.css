@@ -14,4 +14,28 @@ component layer  */
     @apply h-7 hover:scale-125 cursor-pointer
   transition-all duration-150 ease-out;
   }
+  .storyBorder{
+    @apply bg-image-conic-gradient()
+  }
 }
+
+/* .conic-gradient:after {
+  display: block;
+  border-radius: 9999px;
+  content: '';
+  width: 108%;
+  height: 108%;
+  position: absolute;
+  z-index: -1;
+  left: -4%;
+  top: -4%;
+  
+  background-image: conic-gradient(#dd0de5, #dd0de5, #f4486d, #ff6a26, #ff6a26,#e829ac);
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin { 
+  100% { 
+    transform: rotate(360deg);
+  }
+} */
